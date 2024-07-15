@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="menu.css">
+    <script>
+        $(document).ready(function() {
+    let items = JSON.parse(localStorage.getItem('CItem')) || [];
+    $('#p').html(items.length);
+});
+    </script>
+    <script src="home.js"></script>
+    <title>Menu</title>
+</head>
+<body data-page="menu">
+    <div class="countainer">
+        <s-header></s-header>
+    
+        <main>
+            <div class="a" style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 30px;">
+                <img src="./img/lines.png" style="width: 310px;height: 125px;" alt="">
+                <p style="font-size: 38px;color: white;">OUR MENU</p>
+            </div>
+            <div class="cont">
+                <div class="card">
+                    <a href="beans.html"><img src="./img/coffee_beans.jpeg" alt="">
+                    <div class="det">
+                        <p>Coffee Beans</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="ground.html"><img src="./img/ground.jpeg" alt="">
+                        <div class="det">
+                            <p>Ground  Coffee</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="instant.html"><img src="./img/instant.jpeg" alt="">
+                        <div class="det">
+                            <p>Instant Coffee</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="capsules.html"><img src="./img/cup.jpeg" alt="">
+                        <div class="det">
+                            <p>Coffee Capsules</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="green.html"><img src="./img/green.jpeg" alt="">
+                        <div class="det">
+                            <p>Green Coffee</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <s-footer></s-footer>
+    </div>
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script>
+        const bar=document.querySelector(".sumlink");
+        const dmenu=document.querySelector(".dmenu");
+        bar.onclick=function(){
+            dmenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>

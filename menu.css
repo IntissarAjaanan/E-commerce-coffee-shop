@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+}
+
+
+nav {
+    background-color: transparent !important;
+    height: fit-content !important;
+}
+
+nav .l {
+    display: none !important;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main .cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.cont .card {
+    background-color: #000000;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.card a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover a img {
+    opacity: 0.5;
+}
+
+.card .det {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: rgba(186, 185, 185, 0.16);
+    transition: width 0.5s ease-in;
+    overflow: hidden;
+}
+
+.card:hover .det {
+    width: 100%;
+}
+
+.card .det p {
+    z-index: 1;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    visibility: hidden;
+}
+
+.card:hover .det p {
+    visibility: visible;
+}
+@media (max-width:1100px) {
+    main .cont {
+        justify-content: center;
+    }
+    main{
+        width: 100%;
+    }
+}

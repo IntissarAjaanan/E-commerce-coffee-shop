@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Authentication</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face log">
+                <div class="champ login">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Username" name="log">
+                    <br>
+                    <input type="password" placeholder="Password" name="pass">
+                    <br>
+                    <a href="index.html"><input type="submit" value="Login" id="btn-login"></a>
+                </div>
+                <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+            <div class="face sign">
+                <div class="champ signup">
+                    <h2>Sign Up</h2>
+                    <div>
+                        <label for="">First name</label>
+                        <input type="text" placeholder="Xxxx">
+                    </div>
+                    <div>
+                        <label for="">Last name</label>
+                        <input type="text" placeholder="Xxxx">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="text" placeholder="Xxxx@gmail.com">
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password" placeholder="**********">
+                    </div>
+                    <div>
+                        <label for="">Confirm Password</label>
+                        <input type="password" placeholder="**********"><br>
+                    </div>
+                    <a href="index.html"><input type="submit" value="Sign Up" id="btn-signup"></a>
+                </div>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('show-signup').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('.card').classList.add('flipped');
+});
+
+document.getElementById('show-login').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('.card').classList.remove('flipped');
+});
+
+    </script>
+</body>
+</html>

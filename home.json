@@ -1,0 +1,172 @@
+[
+    {
+        "id":1,
+        "name":"ARABICA",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/arabica_beans.png?raw=true",
+        "description":"100% Arabica Coffee",
+        "price": 40
+    },
+
+    {
+        "id":2,
+        "name":"ROBUSTA",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/rebusta_beans.png?raw=true",
+        "description":"100% Robusta Coffee",
+        "price":50
+    },
+
+    {
+        "id":3,
+        "name":"EXCELCA",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/excelca_beans.png?raw=true",
+        "description":"100% Exelca Coffee",
+        "price":49
+    },
+
+    {
+        "id":4,
+        "name":"LIBERICA",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/liberica_beans.png?raw=true",
+        "description":"Liberica Coffee",
+        "price":55
+    },
+
+    {
+        "id":5,
+        "name":"MOCHA",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/mocha_beans.png?raw=true",
+        "description":"Great Aromas",
+        "price":30
+    },
+
+    {
+        "id":6,
+        "name":"SPECIAL",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/special_beans.png?raw=true",
+        "description":"Premium Selection",
+        "price":45
+    },
+
+    {
+        "id":7,
+        "name":"BRASIL",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/brasil_beans.png?raw=true",
+        "description":"Selection of Great Origins",
+        "price":50
+    },
+
+    {
+        "id":8,
+        "name":"ARUBA",
+        "categorie":"Coffee Beans",
+        "img":"https://github.com/int024/caffeine_world/blob/main/aruba_beans.png?raw=true",
+        "description":"Decaffeinated Arabicas",
+        "price":25
+    },
+
+    {
+        "id":9,
+        "name":"MOCHA",
+        "categorie":"Instant Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/instant_mocha.png?raw=true",
+        "description":"50gr Mocha Instant Coffee",
+        "price":25
+    },
+
+    {
+        "id":10,
+        "name":"MOCHA",
+        "categorie":"Instant Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/instant_mocha.png?raw=true",
+        "description":"250gr Mocha Instant Coffee",
+        "price":55
+    },
+
+    {
+        "id":11,
+        "name":"MOCHA",
+        "categorie":"Ground Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/mocha_ground.png?raw=true",
+        "description":"Mocha Ground Coffee",
+        "price":25
+    },
+
+    {
+        "id":12,
+        "name":"SPECIAL",
+        "categorie":"Ground Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/special_ground.png?raw=true",
+        "description":"Premium Selection",
+        "price":25
+    },
+
+    {
+        "id":13,
+        "name":"ARABICA",
+        "categorie":"Ground Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/arabica_ground.png?raw=true",
+        "description":"Superior Ground Arabica",
+        "price":25
+    },
+
+    {
+        "id":14,
+        "name":"BRASIL",
+        "categorie":"Ground Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/brasil_ground.png?raw=true",
+        "description":"Selection of Great Origins",
+        "price":25
+    },
+
+    {
+        "id":15,
+        "name":"ARABICA",
+        "categorie":"Compatible Capsules",
+        "img":"https://github.com/int024/caffeine_world/blob/main/arabica_cup.png?raw=true",
+        "description":"Pure Exceptional Arabica",
+        "price":25
+    },
+
+    {
+        "id":16,
+        "name":"MOCHA",
+        "categorie":"Compatible Capsules",
+        "img":"https://github.com/int024/caffeine_world/blob/main/mocha_cup.png?raw=true",
+        "description":"Blend Of Great Aromas",
+        "price":25
+    },
+
+    {
+        "id":17,
+        "name":"NESPRESSO",
+        "categorie":"Compatible Capsules",
+        "img":"https://github.com/int024/caffeine_world/blob/main/nespresso_cup.png?raw=true",
+        "description":"Original Nespresso",
+        "price":25
+    },
+
+    {
+        "id":18,
+        "name":"GREEN COFFEE",
+        "categorie":"Green Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/green_coffee.png?raw=true",
+        "description":"Premium Green Coffee",
+        "price":65
+    },
+
+    {
+        "id":19,
+        "name":"Instant Mocha box",
+        "categorie":"Instant Coffee",
+        "img":"https://github.com/int024/caffeine_world/blob/main/instant_coffee_box.png?raw=true",
+        "description":"50pc Mocha Instant Coffee",
+        "price":60
+    }
+]

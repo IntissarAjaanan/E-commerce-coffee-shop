@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script>
+      $(document).ready(function() {
+        let items = JSON.parse(localStorage.getItem('CItem')) || [];
+        $('#p').html(items.length);
+    });
+    </script>
+    <title>About Us</title>
+</head>
+<body data-page="about" >
+    <div class="countainers">
+        <s-header></s-header>
+        <div class="a" style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 30px;">
+            <img src="./img/lines.png" style="width: 310px;height: 125px;" alt="">
+            <p style="font-size: 38px;color: white;">ABOUT US</p>
+        </div>
+        <div class = container>
+          <div class = card>
+            <img src ='./img/welcome.png'>
+            <div class = content>
+              <h3>Welcome to The Coffeine World!</h3>
+              <p>At The Coffeine World, we believe that coffee is
+                more than just a beverage - it is a way of life. Our mission 
+                is to bring you the finest coffee from around the globe, right to 
+                your doorstep. We are passionate about every step of the coffee journey, 
+                from sourcing the highest quality beans to delivering a perfect cup of coffee 
+                that brightens your day.</p>
+            </div>
+          </div>    
+        </div>
+        <div class = container>
+            <div class = card>
+              <img src ='./img/story.jpg'>
+              <div class = content>
+                <h3 id="story">Our Story</h3>
+                <p>The Coffeine World was born out of a deep love for coffee 
+                    and desire to share that love with others, with a simple goal:
+                    to create a community of coffee enthusiasts who appreciate 
+                    the art and science of coffee making. </p>
+                <p>Was started as a small local shop has grown into an online 
+                    destination for coffee lovers everywhere. We take pride in our humble 
+                    beginning and remain committed to maintaining the personal touch 
+                    and attention to detail that our customers have come to expect.</p>
+              </div>
+            </div>    
+        </div>
+        <div class = container>
+            <div class = card>
+              <img src ='./img//5537aa3b-65f9-4a10-ad49-666adff70174.jpg'>
+              <div class = content>
+                <h3 id="coffee">Our Coffee</h3>
+                <p>
+                    Quality is at the heart of everything we do.
+                     We source our beans from the most renowned 
+                     coffee-growing regions in the world, including 
+                     Ethiopia, Colombia, Brazil, and more. Each batch
+                      is carefully selected and roasted to perfection 
+                      to ensure that you get the best flavor and aroma 
+                      in every cup.
+                </p>
+                <p>
+                    We offer a wide range of coffee products to 
+                    suit every taste and preference, 
+                    from single-origin beans to unique blends, 
+                    as well as a variety of brewing equipment 
+                    and accessories. Whether you’re a 
+                    seasoned barista or just starting your coffee
+                     journey, we have something for everyone.
+                </p>
+              </div>
+            </div>    
+        </div>
+        <div class = container>
+            <div class = card>
+              <img src ='./img/gettouch.jpg'>
+              <div class = content>
+                <h3>Get in Touch</h3>
+                <p>
+                    We love hearing from our customers! 
+                    If you have any questions, feedback, or 
+                    just want to chat about coffee, don’t 
+                    hesitate to reach out to us at 
+                    <span>Caffeine_World@gmail.com</span>.</p>
+                    <p>
+                        Your satisfaction is our top priority, 
+                    and we are always here to help.
+                    </p>
+              </div>
+            </div>    
+        </div>
+        <s-footer></s-footer>
+    </div>
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script>
+        const bar=document.querySelector(".sumlink");
+        const dmenu=document.querySelector(".dmenu");
+        bar.onclick=function(){
+            dmenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>

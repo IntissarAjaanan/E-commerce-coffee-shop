@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+    color: whitesmoke;
+}
+.countainer{
+    width: 100%;
+}
+main{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    border-top: 50px;
+}
+main div i{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 10px;
+}
+.c{
+    width: 90%;
+    margin: auto;
+}
+.c p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.c .pmethods div{
+    position: relative;
+    margin-top: 50px;
+}
+
+.c .pmethods p{
+    font-weight: lighter;
+    font-size: 15px;
+    color: grey;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+}
+.c .pmethods div:first-of-type p{
+    left: 23%;
+}
+.c .pmethods div:nth-of-type(2) p{
+    left:30%;
+}
+
+.c .pmethods{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.c .pmethods img{
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+}
+.c .pmethods .imm.selected img{
+    border: 6px solid rgb(18, 94, 18);
+}
+.c .inf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.c .inf div{
+    width: 550px;
+}
+.c .inf div p span{
+    border: 3px solid rgb(3, 79, 3);
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 50%;
+}
+.c .inf div label{
+    font-weight: lighter;
+    color: grey;
+}
+.c .inf div input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.c .inf div form .o input{
+    width: 100%;
+}
+.c .inf div form .o{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+select{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+input[type='submit']{
+    float: right;
+    width: 110px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(3, 79, 3);
+    color: whitesmoke;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .c .pmethods{
+        justify-content: center !important;
+    }
+    .c .pmethods img{
+        width: 220px;
+        height: 220px;
+    }
+    .c .inf{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .c .inf div{
+        width: 300px !important;
+    }
+    .c .pmethods p{
+        font-weight: lighter;
+        font-size: 13px;
+        color: grey;
+        position: absolute;
+        top: 80%;
+        left: 7%;
+    }
+    .c .pmethods div:first-of-type p{
+        left: 15%;
+        top: 80%;
+    }
+    .c .pmethods div:nth-of-type(2) p{
+        left:23%;
+        top: 84%;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Home Page</title>
+</head>
+<body onload="GetItem()" data-page="home">
+
+    <div class="countainer">
+        <s-header></s-header>
+        <div class="p">
+            <p>All Products</p>
+            <img src="./img/lines.png" alt="">
+        </div>
+        <div class="s">
+            <button id="btn-s"><i class="fas fa-search"></i></button>
+            <input type="search" placeholder="Search for products" id="input-s">
+        </div>
+        <main>
+            <div class="f">
+                <h3>Filter</h3>
+                <aside>
+                    <div class="cat">
+                        <h4>Categorie</h4>
+                        <div class="cinput">
+                            <div class="cpu">
+                                <label for="Cb">Coffet Beans</label>
+                                <input type="radio" name="c" id="Cb" value="Coffee Beans">
+                            </div>
+                            <div class="cpu">
+                                <label for="ic">Instant Coffee</label>
+                                <input type="radio" name="c" id="ic" value="Instant Coffee">
+                            </div>
+                            <div class="cpu">
+                                <label for="gc">Ground Coffee</label>
+                                <input type="radio" name="c" id="gc" value="Ground Coffee">
+                            </div>
+                            <div class="cpu">
+                                <label for="cp">Compatible Capsules</label>
+                            <input type="radio" name="c" id="cp" value="Compatible Capsules">
+                            </div>
+                            <div class="cpu">
+                                <label for="grc">Green Coffee</label>
+                                <input type="radio" name="c" id="grc" value="Green Coffee">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="prc">
+                        <h4>Price</h4>
+                        <input type="range" name="pr" id="priceRange" value="100" min="20" max="200">
+                        <p id="priceOutput">Price: 100 DH</p>
+                    </div>
+                </aside>
+            </div>
+            <div id="items"></div>
+        </main>
+        
+
+        <s-footer></s-footer>
+    </div>
+    
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script src="home.js"></script>
+    <script>
+        const bar=document.querySelector(".sumlink");
+        const dmenu=document.querySelector(".dmenu");
+        bar.onclick=function(){
+            dmenu.classList.toggle('open')
+        }
+    </script>
+</body>
+</html>

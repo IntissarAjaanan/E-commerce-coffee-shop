@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    <script src= "https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Payment</title>
+</head>
+<body>
+    <div class="countainer">
+        <main>
+            <div><a href="shop.html"><i class="fas fa-arrow-circle-left"></i></i></a></div>
+            <div class="a" style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 30px;">
+                <img src="./img/lines.png" style="width: 310px;height: 120px;" alt="">
+                <p style="font-size: 40px;color: white;">Payment</p>
+            </div>
+            <div class="c">
+                <p>Choose payment method below</p>
+                <div class="pmethods">
+                    <div class="imm" onclick="selectPaymentMethod(this)">
+                        <img src="./img/pay_credit.jpeg" alt="">
+                        <p>PAY WITH CREDIT CARD</p>
+                    </div>
+                    <div class="imm" onclick="selectPaymentMethod(this)">
+                        <img src="./img/pay_paypal.jpeg" alt="">
+                        <p>PAY WITH PAYPALE</p>
+                    </div>
+                    <div class="imm" onclick="selectPaymentMethod(this)">
+                        <img src="./img/pay_amazon.jpeg" alt="">
+                        <p>PAY WITH AMAZON PAYMENTS</p>
+                    </div>
+                </div>
+                <div class="inf">
+                    <div class="bf">
+                        <p><span>1</span> Biling Info</p>
+                        <form >
+                            <label for="n">FULL NAME</label><br>
+                            <input type="text" placeholder="" id="name"><br>
+                            <label for="b">BILING ADRESS</label><br>
+                            <input type="text" id="adress">
+                            <div class="o">
+                                <div>
+                                    <label for="">CITY</label><br>
+                                    <input type="text" id="city"><br>
+                                </div>
+                                <div>
+                                    <label for="">ZIP CODE</label><br>
+                                    <input type="text" id="zcode"><br>
+                                </div>
+                            </div>
+                            <label for="">COUNTRY</label><br>
+                            <input type="text" name="" id="country">
+                        </form>
+                    </div>
+                    <div class="cf">
+                        <p><span>2</span> Credit Card Info</p>
+                        <form >
+                            <label for="">CARTHOLDER NAME</label><br>
+                            <input type="text" placeholder="" id="cname"><br>
+                            <label for="b">CARD NUMBER</label><br>
+                            <input type="text" name="" id="cnum">
+                            <div class="o">
+                                <div>
+                                    <label for="">EXP MONTH</label><br>
+                                    <select name="" id="sel">
+                                        <script>
+                                            const select=document.getElementById('sel');
+                                            for(let i=1;i<=12;i++){
+                                                const op=document.createElement('option');
+                                                op.value=i;
+                                                op.textContent=i;
+                                                select.appendChild(op);
+                                            }
+                                        </script>
+                                    </select><br>
+                                </div>
+                                <div>
+                                    <label for="">EXP YEAR</label><br>
+                                    <select name="" id="sel2">
+                                        <script>
+                                            const select2=document.getElementById('sel2');
+                                            const cY=new Date().getFullYear();
+                                            for(let i=cY-4;i<=cY+4;i++){
+                                                const op=document.createElement('option');
+                                                op.value=i;
+                                                op.textContent=i;
+                                                select2.appendChild(op);
+                                            }
+                                        </script>
+                                    </select><br>
+                                </div>
+                            </div>
+                            <label for="">CVC NUMBER</label><br>
+                            <input type="text" name="" id="cvcnum">
+                        </form>
+                    </div>
+                </div>
+                <input type="submit" id="done" value="PROCEED" >
+            </div>
+        </main>
+    </div>
+    <script>
+        function selectPaymentMethod(selectedElement) {
+
+        let paymentMethods = document.querySelectorAll('.imm');
+        paymentMethods.forEach(method => {
+            method.classList.remove('selected');
+        });
+
+        
+        selectedElement.classList.add('selected');
+}
+
+    </script>
+
+
+    <script type="text/javascript"> 
+        const btn=document.querySelector('#done');
+        btn.onclick=function(){
+            Swal.fire({
+                title: 'Done!',
+                text: 'You will enjoy the coffee soon',
+                icon: 'success'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = 'index.html';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script>
+        $(document).ready(function() {
+    let items = JSON.parse(localStorage.getItem('CItem')) || [];
+    $('#p').html(items.length);
+});
+    </script>
+    <title>Coffee Beans Products</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #151515;
+        }
+        nav {
+            background-color: none;
+            height: fit-content !important;
+        }
+        nav .l {
+            display: none !important;
+        }
+        #items{
+            width: 90%;
+            padding: 20px;
+            margin:auto;
+            background-color: black;
+            margin-bottom: 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 220px;
+            height: 350px;
+            /* background-color: #6a6a6a; */
+            margin-bottom: 15px;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .card:hover{
+            box-shadow: rgba(209, 207, 207, 0.466) 0px 7px 29px 0px;
+        }
+        .card .img img{
+            width: 220px;
+            height: 190px;
+        }
+        .card .t{
+            text-align: center;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .card .name{
+            width: 100%;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .card .description{
+            width: 100%;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: lighter;
+            color: rgb(224, 227, 227);
+        }
+        .card .padd{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        .card .padd .price{
+            font-weight: bold;
+            font-size: 25px;
+            color: rgba(156, 150, 144, 0.957);
+        }
+        .card .t .padd .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .padd .btn button{
+            border: 1px solid gainsboro;
+            width: 55px;
+            height: 35px;
+            font-size: 17px;
+            background: gainsboro;
+            cursor: pointer;
+        }
+        .card .padd .btn input[type='number']{
+            width: 55px;
+            height: 36px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .card .t .padd .btn button:hover{
+            border-color: white;
+            background-color: white;
+        }
+        .a div a i{
+            color: whitesmoke;
+            cursor: pointer;
+            font-size: 40px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body data-page='Instant Coffee'>
+    <div class="countainer">
+        <s-header></s-header>
+        <div class="a" style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin: 30px;">
+            <img src="./img/lines.png" style="width: 310px;height: 125px;" alt="">
+            <p style="font-size: 38px;color: white;">Instant Coffee</p>
+            <div><a href="menu.html"><i class="fas fa-arrow-circle-left"></i></i></a></div>
+        </div>
+        <main>
+            <div id="items"></div>
+        </main>
+        <s-footer></s-footer>
+    </div>
+    <script src="nav.js"></script>
+    <script src="footer.js"></script>
+    <script src="home.js"></script>
+    <script>
+        const bar=document.querySelector(".sumlink");
+        const dmenu=document.querySelector(".dmenu");
+        bar.onclick=function(){
+            dmenu.classList.toggle('open')
+        }
+    </script>
+    <!-- <script src="./menu.js"></script> -->
+</body>
+</html>
